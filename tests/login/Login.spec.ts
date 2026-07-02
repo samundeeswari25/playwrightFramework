@@ -13,21 +13,15 @@ test('Login Test', async ({ page, pom }) => {
 
 });
 
-test('Excel Login', async ({ page, pom }) => {
-    const testData: any = ExcelReader.readExcel(
-        'test-data/userdata.xlsx',
+test('Read Excel Data', async () => {
+    const data = ExcelReader.readData(
+        './test-data/userdata.xlsx',
         'Sheet1'
     );
 
-    for (const data of testData) {
-    console.log(data.USERNAME);
-    console.log(data.PASSWORD)
-    
-}
-
-    console.log(testData);
+    console.log(data);
 });
 
-   
+
 
        

@@ -1,0 +1,1 @@
+[INFO] 2026-07-02T15:31:00.071Z - Launching application

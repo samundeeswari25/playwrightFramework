@@ -6,7 +6,7 @@ export default defineConfig({
     retries: 1,
 
     use: {
-        headless: false,
+        headless: true,
         screenshot: 'only-on-failure',
         video: 'retain-on-failure',
         trace: 'retain-on-failure'
@@ -14,6 +14,9 @@ export default defineConfig({
 
     reporter: [
         ['html'],
-        ['list']
-    ]
+        ['list'],
+        ['allure-playwright', {
+    resultsDir: 'allure-results'
+  }]
+]
 });

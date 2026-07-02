@@ -11,10 +11,14 @@
   "devDependencies": {
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
-    "allure-playwright": "^3.10.2"
+    "allure": "^3.14.0",
+    "allure-playwright": "^3.10.2",
+    "commandline": "^0.0.2",
+    "winston": "^3.19.0",
+    "xlsx": "^0.18.5"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
-    "xlsx": "^0.18.5"
+    "exceljs": "^4.4.0"
   }
 }
