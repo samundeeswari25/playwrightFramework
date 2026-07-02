@@ -1,16 +1,12 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS'
-    }
-
     stages {
 
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'YOUR_GITHUB_REPO_URL'
+                url: 'https://github.com/samundeeswari25/playwrightFramework.git'
             }
         }
 
@@ -20,7 +16,7 @@ pipeline {
             }
         }
 
-        stage('Install Playwright Browsers') {
+        stage('Install Browsers') {
             steps {
                 bat 'npx playwright install'
             }
