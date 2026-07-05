@@ -8,6 +8,10 @@ export class ExcelReader {
 
         const data = XLSX.utils.sheet_to_json(worksheet);
 
+        console.log('data');
+
         return data;
+         
     }
+   
 }

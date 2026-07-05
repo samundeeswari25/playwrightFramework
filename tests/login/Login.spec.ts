@@ -3,13 +3,13 @@ import { ENV } from '../../src/utils/EnvReader';
 import { Logger } from '../../src/utils/Logger';
 import { ExcelReader } from '../../src/utils/ExcelReader';
 
-test('Login Test', async ({ page, pom }) => {
+test('Login Test', async ({page, login}) => {
     Logger.info('Launching application');
 
     await page.goto(ENV.BASE_URL);
 
-    const loginPage = pom.getLoginPage();
-    await loginPage.login(ENV.USERNAME, ENV.PASSWORD);
+   
+    await login.login(ENV.USERNAME, ENV.PASSWORD);
 
 });
 
